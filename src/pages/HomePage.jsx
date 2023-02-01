@@ -15,6 +15,9 @@ export const HomePage = () => {
         <div key={article.id} className="card">
           <h2>{article.title}</h2>
           <p>{article.author}</p>
+          <div className="image_container">
+            <img src={article.imgUrl} alt="" />
+          </div>
           <Link to={`/articles/${article.id}`}>Read more...</Link>
         </div>
       ))}

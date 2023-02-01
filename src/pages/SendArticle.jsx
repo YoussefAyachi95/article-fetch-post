@@ -8,13 +8,14 @@ export default function SendArticle() {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [body, setBody] = useState('');
+    const [imgUrl, setImgUrl] = useState('');
     const [isPending, setIsPending] = useState(false);
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const newArticle = {author, title, body, id: randomNum};
+        const newArticle = {author, title, body, id: randomNum, imgUrl: `https://picsum.photos/id/${randomNum}/200/300`};
 
         setIsPending(true)
 

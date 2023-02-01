@@ -1,7 +1,25 @@
+.card {
+    position: relative;
+}
+
 .home .card {
     padding: 20px;
     border: 1px solid #e4e4e4;
     border-radius: 4px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
+}
+
+.image_container{
+    position: absolute;
+    right: 200px;
+    top: 18px;
+    width: 80px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+.image_container img{
+    width: 80px;
+    height: 120px;
 }

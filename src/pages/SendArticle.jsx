@@ -8,7 +8,6 @@ export default function SendArticle() {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [body, setBody] = useState('');
-    const [imgUrl, setImgUrl] = useState('');
     const [isPending, setIsPending] = useState(false);
 
 

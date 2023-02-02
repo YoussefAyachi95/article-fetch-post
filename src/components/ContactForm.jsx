@@ -5,7 +5,6 @@ export default function ContactForm() {
     const [email, setEmail] = useState('');
     const [firstName, setFirstName] = useState('');
     const [message, setMessage] = useState('');
-    const [isPending, setIsPending] = useState(false);
 
 
     const handleSubmit = (e) => {

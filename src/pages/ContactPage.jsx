@@ -11,7 +11,7 @@ const ContactPage = () => {
 
   return (
     <div>
-      <h1>Hallo {name}, please Contact us</h1>
+      <h1>Hello {name}, please Contact us</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim
         ipsam asperiores autem reprehenderit velit assumenda aliquam ex vero

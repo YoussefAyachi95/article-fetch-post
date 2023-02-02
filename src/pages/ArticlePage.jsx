@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 
 export const ArticlePage = () => {
@@ -8,15 +8,15 @@ export const ArticlePage = () => {
 
   const { data: article, isPending: loading, error } = useFetch(url);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (error) {
       setTimeout(() => {
-        history.push("/");
+        navigate.push("/");
       }, 2000);
     }
-  }, [error, history]);
+  }, [error, navigate]);
   return (
     <div>
       {loading && <h2>Loading...</h2>}

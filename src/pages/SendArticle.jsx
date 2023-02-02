@@ -25,7 +25,11 @@ export default function SendArticle() {
         }).then(() => {
             console.log("New article added");
             setIsPending(false)
-        })
+        }).catch(error => {
+          (<div>
+            <h1>{error.message}</h1>
+          </div>)
+         })
     };
    
 

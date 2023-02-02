@@ -18,7 +18,11 @@ export default function ContactForm() {
             body: JSON.stringify(newContact)
         }).then(() => {
             console.log("New contact added");
-        })
+        }).catch(error => {
+          (<div>
+            <h1>{error.message}</h1>
+          </div>)
+         })
     };
 
 

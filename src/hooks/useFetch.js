@@ -7,7 +7,7 @@ export const useFetch = (url, _options) => {
   const options = useRef(_options);
 
   useEffect(() => {
-    console.log(options);
+
     
     const controller = new AbortController();
     const fetchData = async () => {
